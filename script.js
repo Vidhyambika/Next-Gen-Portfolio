@@ -65,5 +65,5 @@ resumeButton.addEventListener("mouseover", () => {
     resumeButton.style.backgroundColor = "#ff6347"; // Tomato color
 });
 resumeButton.addEventListener("mouseout", () => {
-    resumeButton.style.backgroundColor = "#007BFF"; // Original color
+    resumeButton.style.backgroundColor = "linear-gradient(45deg, #6a5acd, #ff69b4)"; // Original color
 });
