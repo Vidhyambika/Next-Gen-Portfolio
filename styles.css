@@ -109,13 +109,17 @@ nav ul li a {
 }
 
 .skill-card {
-    background-color: rgba(225, 179, 130, 0.7);
+    background-color: rgba(41, 9, 71, 0.9);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
 }
-
+@media (prefers-color-scheme: dark) {
+    .skill-card {
+        background-color: rgba(225, 179, 130, 0.7); 
+    }
+}
 .skill-card:hover {
     transform: scale(1.05);
 }
