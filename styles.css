@@ -76,6 +76,60 @@ nav ul li a {
     margin-right: 20px;
 }
 
+.skill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.skill-button.active {
+    background-color: #0056b3;
+}
+
+.skill-button:hover {
+    background-color: #0056b3;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: var(--skill-card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
