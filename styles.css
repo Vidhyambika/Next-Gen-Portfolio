@@ -109,7 +109,7 @@ nav ul li a {
 }
 
 .skill-card {
-    background-color: var(--skill-card-bg);
+    background-color: rgba(225, 179, 130, 0.7);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
