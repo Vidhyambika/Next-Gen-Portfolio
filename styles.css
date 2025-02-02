@@ -107,18 +107,20 @@ nav ul li a {
     gap: 20px;
     padding: 20px;
 }
-
-.skill-card {
+.skill-card.light-mode {
     background-color: rgba(41, 9, 71, 0.9);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
 }
-@media (prefers-color-scheme: dark) {
-    .skill-card {
-        background-color: rgba(225, 179, 130, 0.7); 
-    }
+
+.skill-card.dark-mode {
+    background-color: rgba(225, 179, 130, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 .skill-card:hover {
     transform: scale(1.05);
