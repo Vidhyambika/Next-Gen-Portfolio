@@ -30,6 +30,24 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
+// Skill Category Switching
+const skillButtons = document.querySelectorAll(".skill-button");
+const skillGrids = document.querySelectorAll(".skills-grid");
+
+skillButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        // Remove active class from all buttons
+        skillButtons.forEach(btn => btn.classList.remove("active"));
+        // Add active class to the clicked button
+        button.classList.add("active");
+        // Hide all skill grids
+        skillGrids.forEach(grid => grid.classList.add("hidden"));
+        // Show the selected skill grid
+        const category = button.getAttribute("data-category");
+        document.getElementById(category).classList.remove("hidden");
+    });
+});
+
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
